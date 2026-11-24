@@ -16,14 +16,14 @@ Can the details known when someone books an appointment help estimate whether th
 |---|---|
 | [Appointment patterns dashboard](https://public.tableau.com/app/profile/tioluwani.olubowale/viz/HospitalAppointmentNo-ShowPredictor/HospitalAppointmentNo-Shows) | Compare attendance by booking lead time and age, and see where the most appointments were missed. |
 | [Model performance dashboard](https://public.tableau.com/app/profile/tioluwani.olubowale/viz/HospitalAppointmentNo-ShowPredictor/No-ShowModelPerformance) | Compare the average predicted chance with the observed missed rate in four risk groups. |
-| [Packaged Tableau workbook](Hospital_Appointment_No_Show_Predictor.twbx) | Open both dashboards locally with their data extracts. |
+| [Packaged Tableau workbook](Hospital%20Appointment%20No-Show%20Predictor.twbx) | Open both dashboards locally with their data extracts. |
 | [Analysis notebook](Hospital_Appointment_No_Show_Predictor.ipynb) | Follow the cleaning, charts, model evaluation and interactive predictor. |
 | [Appointment patterns data](Appointment_Patterns.csv) | Explore appointment and missed-visit counts by booking characteristics. |
 | [Model performance data](Model_Performance.csv) | Compare predicted and observed rates within each risk group. |
 
 ## Reproduce the analysis and try the predictor
 
-1. [Open the interactive predictor](https://colab.research.google.com/drive/1YvZawthsyyMkwJ0ZhVAMxzekLoXqUd8w#scrollTo=qjmBU7b8EqAs) and download and unzip the [Medical Appointment No Shows dataset](https://www.kaggle.com/datasets/joniarroba/noshowappointments).
+1. [Open the interactive predictor](https://colab.research.google.com/drive/1YvZawthsyyMkwJ0ZhVAMxzekLoXqUd8w#scrollTo=qjmBU7b8EqAs) and [download the booking CSV](https://raw.githubusercontent.com/Thescientist-LR/hospital-appointment-no-show-predictor/main/KaggleV2-May-2016.csv).
 2. In Colab, choose **Runtime → Run all**. When the upload prompt appears, select **KaggleV2-May-2016.csv**.
 3. Scroll to **Predict a new appointment** at the end of the notebook. Choose an age group, time from booking to visit, day of visit and appointment neighbourhood.
 4. Try **13–17**, **31+ days**, **Tuesday** and **DO QUADRO**. The notebook example estimates a **40.6%** chance of missing this booking. Change just the waiting time to see how the estimate moves.
